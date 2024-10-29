@@ -23,13 +23,19 @@ Download and install the following software:
   - Select the location where you want to clone the repository and click the `Clone` button.
 - Open a terminal and type the command below to clone the repository.
   ```bash
-  git clone https://github.com/shoebjoarder/1-material-ui-hands-on-template
+  git clone https://github.com/shoebjoarder/material-ui-hands-on
   ```
 
 #### Step 3: Install dependencies and run the application
 
 - Open the project using a code editor.
 - In VSCode, click `Terminal` menu from the top menu and click `New Terminal`.
+- Switch between branches to view the different topics. Type `git checkout <branch_name>` in the terminal to switch between the branches. Remember to replace `<branch_name>` with the actual branch name, e.g.,
+
+  ```bash
+  git checkout 1-material-ui-hands-on-template
+  ```
+
 - Open the terminal and type the following command to install the node packages.
   ```bash
   npm ci
