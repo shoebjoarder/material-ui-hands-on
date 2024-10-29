@@ -33,7 +33,7 @@ Download and install the following software:
 - Switch between branches to view the different topics. Type `git checkout <branch_name>` in the terminal to switch between the branches. Remember to replace `<branch_name>` with the actual branch name, e.g.,
 
   ```bash
-  git checkout 1-material-ui-hands-on-template
+  git checkout 2-material-ui-hands-on-fullcode
   ```
 
 - Open the terminal and type the following command to install the node packages.
@@ -48,5 +48,5 @@ Download and install the following software:
 - Click this [link](http://localhost:5173/) to open the application using your default browser.
 
 <p align="center">
-    <img style="max-width: 400px; width:100%;" src="src/assets/preview-initial-state.png" alt="re-frame logo">
+    <img style="max-width: 400px; width:100%;" src="src/assets/preview-final-state.png" alt="re-frame logo">
 </p>

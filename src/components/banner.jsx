@@ -47,12 +47,28 @@ export default function Banner(props) {
                 />
                 <>
                   {/* // * Task 7: Starts here */}
+                  <Typography variant="h4" gutterBottom>
+                    {header}
+                  </Typography>
 
+                  <Typography variant="h6" gutterBottom>
+                    {welcomeMessage}
+                  </Typography>
+
+                  <Typography variant="body1" gutterBottom align="center">
+                    {description}
+                  </Typography>
                   {/* // * Task 7: Ends here */}
                 </>
                 <>
                   {/* // * Task 8: Starts here */}
-
+                  <IconButton
+                    size="large"
+                    color="inherit"
+                    onClick={scrollToTarget}
+                  >
+                    <ArrowDownwardIcon />
+                  </IconButton>
                   {/* // * Task 8: Endss here */}
                 </>
               </Grid>

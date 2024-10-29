@@ -44,7 +44,32 @@ export default function Login(props) {
         <Grid size="grow" component="form" onSubmit={handleSubmit} noValidate>
           <>
             {/* // * Task 3: Starts here */}
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              label="Email Address"
+              name="email"
+              autoComplete="email"
+              autoFocus
+            />
+            <TextField
+              margin="normal"
+              required
+              fullWidth
+              name="password"
+              label="Password"
+              type="password"
+              autoComplete="current-password"
+            />
 
+            <FormControlLabel
+              control={<Checkbox value="remember" color="primary" />}
+              label="Remember me"
+            />
+            <Button type="submit" fullWidth variant="contained" sx={{ my: 2 }}>
+              Sign In
+            </Button>
             {/* // * Task 3: Ends here */}
           </>
           <Grid container justifyContent="space-between">
@@ -63,7 +88,16 @@ export default function Login(props) {
       </Grid>
       <>
         {/* // * Task 4: Starts here */}
-
+        <Snackbar
+          anchorOrigin={{ vertical: "bottom", horizontal: "center" }}
+          open={loggedIn}
+          autoHideDuration={2000}
+          onClose={() => setLoggedIn(false)}
+        >
+          <Alert severity="success" variant="filled">
+            Login successful!
+          </Alert>
+        </Snackbar>
         {/* // * Task 4: Ends here */}
       </>
     </>

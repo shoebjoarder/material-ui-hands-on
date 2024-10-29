@@ -23,7 +23,23 @@ export default function Team() {
               <Grid size={{ sm: 6, md: 12 }} key={index}>
                 <>
                   {/* // * Task 6: Starts here */}
-                  
+                  <CardHeader
+                    avatar={
+                      <Tooltip title="View profile" arrow>
+                        <Avatar
+                          sx={{ width: 56, height: 56, cursor: "pointer" }}
+                          src={member.img}
+                          onClick={() => window.open(member.url)}
+                        />
+                      </Tooltip>
+                    }
+                    title={member.name}
+                    subheader={
+                      <Link href={`mailto:${member.email}`}>
+                        {member.email}
+                      </Link>
+                    }
+                  />
                   {/* // * Task 6: Ends here */}
                 </>
               </Grid>
