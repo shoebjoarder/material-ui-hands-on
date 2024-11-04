@@ -69,7 +69,7 @@ export default function Banner(props) {
                   >
                     <ArrowDownwardIcon />
                   </IconButton>
-                  {/* // * Task 8: Endss here */}
+                  {/* // * Task 8: Ends here */}
                 </>
               </Grid>
             </Paper>
